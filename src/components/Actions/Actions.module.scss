@@ -1,0 +1,157 @@
+.actions {
+  margin-top: 24px;
+  height: 675px;
+  position: relative;
+
+  &__description {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    background-color: #f8f8fa;
+    border-bottom: 1px solid #ebecef;
+    justify-content: space-between;
+
+    &_clients {
+      margin-top: 24px;
+    }
+  }
+
+  &__checkbox {
+    width: 16px;
+    height: 16px;
+    margin: 14px 16px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 320px;
+    color: #434652;
+
+    &_categories {
+      width: 242px;
+    }
+
+    &_subcategories {
+      width: 189px;
+    }
+
+    &_brand {
+      width: 181px;
+    }
+
+    &_product {
+      width: 224px;
+    }
+
+    &_cashback {
+      width: 75px;
+      text-align: center;
+      padding-left: 0;
+    }
+
+    &_item {
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  &__items {
+    list-style-type: none;
+    padding-left: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 604px;
+
+    &_clients {
+      height: 680px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    border-bottom: 1px solid #ebecef;
+  }
+
+  &__select {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+
+    &_active {
+      width: 50%;
+      height: 108px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 8px 0px #4c5d704d;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.5s ease;
+      position: absolute;
+      bottom: 40px;
+      left: 220px;
+    }
+  }
+
+  &__close {
+    appearance: none;
+    border: 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__delete {
+    appearance: none;
+    border: 0;
+    background-color: #ffffff;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.select__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #999999;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.delete__text {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #999999;
+}
