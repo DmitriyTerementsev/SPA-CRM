@@ -1,0 +1,45 @@
+.cities {
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  &__input {
+    outline: none;
+    border: 1px solid #d0d3da;
+    border-radius: 8px;
+    width: 302px;
+    height: 40px;
+    padding-left: 12px;
+  }
+
+  &__button {
+    appearance: none;
+    border: 1px solid #bd68ca;
+    background-color: #c06ecc;
+    color: #ffffff;
+    width: 314px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__delete {
+    margin-left: 12px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+}
