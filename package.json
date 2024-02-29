@@ -1,0 +1,65 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "@rtk-incubator/rtk-query": "^0.3.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^18.2.42",
+    "@types/react-redux": "^7.1.33",
+    "axios": "^1.6.3",
+    "json-server": "^1.0.0-alpha.14",
+    "mobx": "^6.12.0",
+    "mobx-react": "^9.1.0",
+    "mobx-react-lite": "^4.0.5",
+    "mobx-utils": "^6.0.8",
+    "node-sass": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "react-redux": "^9.0.4",
+    "react-router-dom": "^6.20.0",
+    "react-scripts": "^5.0.1",
+    "redux": "^5.0.0",
+    "redux-thunk": "^3.1.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "json-server -w server/db.json -p 3001",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/customize-cra": "^1.0.8",
+    "concurrently": "^8.2.2",
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.2.1",
+    "sass": "^1.69.5",
+    "typescript": "^5.3.2",
+    "typescript-plugin-css-modules": "^5.0.2"
+  }
+}
