@@ -1,0 +1,38 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  border-bottom: 1px solid #ebecef;
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #434652;
+    padding-left: 8px;
+    width: 177px;
+    text-overflow: ellipsis;
+    &_order {
+      width: calc(180px - 8px);
+    }
+
+    &_date {
+      width: calc(177px - 8px);
+    }
+
+    &_sum {
+      width: calc(110px - 8px);
+    }
+
+    &_city {
+      width: 440px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 16px;
+    margin-right: 12px;
+  }
+}
