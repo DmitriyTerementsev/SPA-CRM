@@ -1,0 +1,26 @@
+.orders {
+  &__items {
+    height: 680px;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+    div:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__null {
+    display: none;
+
+    &_active {
+      margin-top: 24px;
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+}
